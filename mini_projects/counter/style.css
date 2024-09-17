@@ -41,10 +41,11 @@ body {
 .counter {
     width: 70px;
     height: 30px;
+    border: none;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
     background-color: #0085fd;
     transition: .6s;
 }
@@ -60,12 +61,14 @@ body {
     background-color: unset;
     transition: .6s;
 }
+
 .reset:hover {
     color: #45a4f8;
     border: 2px solid #45a4f8;
 
 }
+
 .btn {
-    border-radius: 5px;
     cursor: pointer;
+    border-radius: 5px;
 }
