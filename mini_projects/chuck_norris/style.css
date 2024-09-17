@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #1f1f1f;
+    font-family: monospace;
+}
+
+.container {
+    position: relative;
+    width: 80%;
+    height: fit-content;
+    margin: auto;
+    text-align: center;
+    color: limegreen;
+    overflow: hidden;
+    font-size: 2rem;
+}
+
+#loadJokeBtn {
+    border: none;
+    line-height: 2rem;
+    background-color: #1f1f1f;
+    color: limegreen;
+    border: 1px solid limegreen;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 23px;
+    font-weight: 400;
+    margin: 41px 0px 0;
+}
+
+#loadJokeBtn:hover {
+    background-color: limegreen;
+    color: #1f1f1f;
+    transition: .5s;
+}
+#chuckNorrisImage {
+    display: block;
+    text-align: center;
+    width: 100%;
+}

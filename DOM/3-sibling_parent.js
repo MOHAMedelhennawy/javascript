@@ -15,3 +15,5 @@ console.log('next element', element.nextSibling)
 
 
 // element.nextElementSibling.remove()
+
+

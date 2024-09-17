@@ -6,7 +6,6 @@ function getWeather() {
     })
 }
 
-// Chaining
 function getWeatherIcon(weather) {
     return new Promise(function(resolve, reject) {
         setTimeout(() => {

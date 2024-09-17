@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Weather App</title>
+</head>
+<body>
+    <div id="container">
+            <div class="searchContainer">
+                <input id="searchInput" type="search" placeholder="Search By City">
+                <button id="searchBtn"><i id="searchIcon" class="fa fa-search" aria-hidden="true"></i></button>
+            </div>
+        <p class="date">date</p>
+        <h1 class="location">location</h1>
+        <div class="iconContainer">
+            <img class="weatherIcon" src="">
+        </div>
+        <span class="weatherDescription"></span>
+        <h3 class="temperature"></h3>
+        <div class="Higher-LowerTemp">
+            <div class="col">
+                <div class="info">
+                    <h5>Highs</h5>
+                    <p class="tempMax temp"></p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="info">
+                    <h5>Lows</h5>
+                    <p class="tempMin temp"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="weather.js"></script>
+</body>
+</html>
