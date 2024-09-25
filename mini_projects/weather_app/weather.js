@@ -1,6 +1,7 @@
 const getWeather = async (city) => {
+    const API_key = '8394341b2fe3bf74057e0320421a8c5c';
+
     try {
-        const API_key = '8394341b2fe3bf74057e0320421a8c5c';
         const weatherFetch = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_key}`);
         const weatherData = await weatherFetch.json();
 
@@ -41,8 +42,13 @@ function updateWeatherUI(weatherData) {
 document.querySelector('#searchBtn').onclick = () => {
     (async () => {
         const city = document.querySelector('#searchInput').value
-        const weatherData = await getWeather(city)
+        let weatherData;
+        if (city && city !== '' && city !== undefined) {
+            weatherData = await getWeather(city)
+        }
 
-        updateWeatherUI(weatherData);
+        if (weatherData) {
+            updateWeatherUI(weatherData);
+        }
     })()
 }
